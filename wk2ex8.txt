@@ -1,0 +1,19 @@
+using System;
+
+public class Wk2ex7
+{
+    public void Main()
+    {
+        Console.WriteLine("Introduceti numarul maxim:");
+        int nr = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= nr; i++)
+        {
+            if (i % 3 == 0 && i % 7 == 0)
+            {
+                Console.WriteLine(i);
+            }
+
+        } 
+    }
+}

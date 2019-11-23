@@ -1,0 +1,29 @@
+using System;
+
+public class WK2ex4
+{
+    public static int Numere(int a, int b)
+    {
+        int nr=0;
+        for (int i = a; i <= b; i++)
+        {
+            if (i % 5 == 0)
+            {
+                nr++;
+            }
+        }
+        return nr;
+    }
+
+    public static void Main()
+
+    {
+        Console.WriteLine("Introdu primul numar: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Introdu al doilea numar: ");
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Intre cele doua numere sunt {0} numere divizibile cu 5", Numere(a,b));
+
+    }
+
+}

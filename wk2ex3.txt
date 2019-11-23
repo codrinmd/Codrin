@@ -1,0 +1,26 @@
+using System;
+public class WK2ex3
+{
+    public static double Ariecerc(double r)
+    {
+        double arie;
+        double pi = Math.PI;
+        arie = pi * (r * r);
+        return arie;
+    }
+
+    public static double Perimetru(double r)
+    {
+        double perim;
+        double pi = Math.PI;
+        perim = 2 * pi * r;
+        return perim;
+    }
+    public static void Main()
+    {
+        Console.WriteLine("Introdu raza cercului: ");
+        double r = double.Parse(Console.ReadLine());
+        Console.WriteLine("Aria cercului este: {0}", Ariecerc(r));
+        Console.WriteLine("Perimetrul cercului este: {0}", Perimetru(r));
+    }
+}

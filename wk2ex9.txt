@@ -1,0 +1,36 @@
+using System;
+using System.Linq;
+
+public class WK2ex2
+{
+    public static int Maxim(int a, int b, int c, int d, int e)
+    {
+        int max;
+        int[] sir = { a, b, c, d, e };
+        max = sir.Max();
+        return max;
+    }
+
+	public static int Minim(int a, int b, int c, int d, int e)
+	{
+		int min;
+		int[] sir={a,b,c,d,e};
+		min=sir.Min();
+		return min;
+	}
+    public static void Main()
+    {
+        Console.WriteLine("Introdu primul numar: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Introdu al doilea numar: ");
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Introdu al treilea numar: ");
+        int c = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Introdu al patrulea numar: ");
+        int d = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Introdu al cincilea numar: ");
+        int e = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Cel mai mare numar este: {0}", Maxim(a, b, c, d, e));
+	Console.WriteLine("Cel mai mic numar este: {0}", Minim(a,b,c,d,e));
+    }
+}
